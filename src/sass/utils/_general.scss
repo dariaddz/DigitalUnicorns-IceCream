@@ -1,11 +1,12 @@
 body {
-  color: ;
-  background-color: ;
 
-  font-family: ;
-  font-size: ;
-  line-height: ;
-  letter-spacing: ;
+  color: #000000;
+  // background-color: ;
+  // font-family: ;
+  // font-size: ;
+  // line-height: ;
+  // letter-spacing: ;
+
 }
 
 h1,
@@ -42,6 +43,7 @@ a {
   @media (min-width: 768px) {
     width: 768px;
   }
+
   @media (min-width: 1280px) {
     width: 1280px;
   }
