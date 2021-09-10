@@ -2,16 +2,38 @@
      background-color: $Main-background;
      margin-left: auto;
      margin-right: auto;
-    
+
      background-repeat: no-repeat;
      background-position: 50px 30px;
+    }
+    .about__label{
+        padding-top: 125px;
+        margin-bottom: 15px;
+        text-align: center;
+        color: $Light-accent;
     }
     .about__title{
         color: $accent;
         margin-bottom: 30px;
+        text-align: center;
     }
 
     .about__list{
+        margin-left: 50px;
+        margin-right: 50px;
         margin-bottom: 30px;
     }
-    
+    .about__item{
+        margin-bottom: 30px;
+    }
+    .about__button{
+       width: 175px;
+       height: 45px;
+       background-color: $Light-text;
+       border-radius: 22px;
+        color: $accent;
+        border-color: transparent;
+        margin-left: 130px;
+              
+    }
+
