@@ -1,12 +1,11 @@
 body {
-
-  color: #000000;
-  // background-color: ;
-  // font-family: ;
-  // font-size: ;
-  // line-height: ;
+  color: $Main-text;
+  background-color: $Main-background;
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.79;
   // letter-spacing: ;
-
 }
 
 h1,

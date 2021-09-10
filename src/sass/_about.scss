@@ -1,0 +1,17 @@
+ .about{
+     background-color: $Main-background;
+     margin-left: auto;
+     margin-right: auto;
+    
+     background-repeat: no-repeat;
+     background-position: 50px 30px;
+    }
+    .about__title{
+        color: $accent;
+        margin-bottom: 30px;
+    }
+
+    .about__list{
+        margin-bottom: 30px;
+    }
+    
