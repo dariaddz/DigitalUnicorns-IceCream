@@ -1,0 +1,55 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.footer__subtitle {
+  margin-bottom: 20px;
+  width: 230px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: $Light-accent;
+}
+
+.footer__main-title {
+  margin-bottom: 45px;
+  width: 230px;
+  font-family: $secondary-font;
+
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $accent;
+}
+
+.footer__socmedia {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 45px;
+}
+
+.footer__phone {
+  margin-bottom: 45px;
+  text-align: end;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+}
+.footer__tel {
+  color: $accent;
+  font-weight: 500;
+}
+.footer__copyright {
+  padding-top: 20px;
+  text-align: center;
+  color: $Secondary-text;
+  border-top: 1px solid $medium-secondary-text;
+}
