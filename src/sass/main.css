@@ -91,12 +91,12 @@ a {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
-  margin-bottom: 140px;
+  margin-bottom: 145px;
 }
 
 .products-list__item {
   position: relative;
-  background-color: #FFB8CA;
+  background-color: #fff;
   border-radius: 24px;
   padding: 160px 40px 40px 40px;
 }
@@ -105,7 +105,31 @@ a {
   margin-bottom: 130px;
 }
 
-.products-list__title::before {
+.products-list__item:nth-child(1) {
+  background-color: #FFB8CA;
+}
+
+.products-list__item:nth-child(2) {
+  background-color: #F0D1A5;
+}
+
+.products-list__item:nth-child(3) {
+  background-color: #C2E297;
+}
+
+.products-list__item::before:nth-child(1)::before {
+  background-image: url(../images/products/icecream-1.png);
+}
+
+.products-list__item::before:nth-child(2)::before {
+  background-image: url(../images/products/icecream-2.png);
+}
+
+.products-list__item::before:nth-child(3)::before {
+  background-image: url(../images/products/icecream-3.png);
+}
+
+.products-list__item::before {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -162,21 +186,5 @@ a {
   border-radius: 50%;
   cursor: pointer;
   padding: 0;
-}
-
-.products-list__item:nth-child(1) {
-  background-color: #F44336;
-}
-
-.products-list__item:nth-child(2) {
-  background-color: #FFB8CA;
-}
-
-.products-list__item:nth-child(3) {
-  background-color: #F0D1A5;
-}
-
-.products-list__item:nth-child(4) {
-  background-color: #C2E297;
 }
 /*# sourceMappingURL=main.css.map */

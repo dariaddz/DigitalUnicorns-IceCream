@@ -37,20 +37,34 @@
 
 }
 
-.products-list__item {
+.products-list__item  {
   position: relative;
 
-  background-color: #FFB8CA;
+  background-color: #fff;
   border-radius: 24px;
 
   padding: 160px 40px 40px 40px;
+
+  &:not(:last-child) {
+    margin-bottom: 130px;
+  }
 }
 
-.products-list__item:not(:last-child) {
-  margin-bottom: 130px;
-}
+$colors: 
+"#FFB8CA",
+"#F0D1A5",
+"#C2E297";
 
-.products-list__title::before {
+@include colorize($colors, ".products-list__item");
+
+$images: 
+"url(../images/products/icecream-1.png)",
+"url(../images/products/icecream-2.png)",
+"url(../images/products/icecream-3.png)";
+
+@include imaginize($images, ".products-list__item");
+
+.products-list__item::before {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -76,21 +90,21 @@
   text-transform: uppercase;
 
   color: #FFFFFF;
-}
 
-.products-list__title::after {
-  content: '';
-  display: block;
-  width: 26px;
-  height: 6px;
+  &::after {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 6px;
 
-  background-image: url(../images/products/dots.png);
-  background-size: contain;
-  
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    background-image: url(../images/products/dots.png);
+    background-size: contain;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .products-list__description {
@@ -122,9 +136,3 @@
    padding: 0;
 }
 
-$colors: "#F44336",
-"#FFB8CA",
-"#F0D1A5",
-"#C2E297";
-
-@include colorize($colors, ".products-list__item");
