@@ -13,7 +13,7 @@
     padding-bottom: 110px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 130;
     padding-bottom: 120px;
   }
@@ -33,7 +33,7 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
   }
 }
@@ -56,7 +56,7 @@
     margin-bottom: 150px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1,17;
     margin-bottom: 260px;
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .products-list {
     display: flex;
     margin: -15px;
@@ -96,10 +96,10 @@
   padding: 150px 40px 40px 40px;
 
   @media screen and (min-width: 768px) {
-    padding: 160px 11px 40px 11px;
+    padding: 120px 11px 40px 11px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     padding: 160px 45px 50px 45px;
   }
 
@@ -127,6 +127,17 @@
 
   background-image: url(../images/products/icecream-1.png);
   background-size: contain;
+
+@media screen and (min-width: 768px) {
+  width: 220px;
+  height: 224px;
+}
+
+@media screen and (min-width: 1280px) {
+  top: -5%;
+  width: 335px;
+  height: 335px;
+}
 }
 
 .products-list__title {
@@ -171,7 +182,7 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 60px;
   }
 }
