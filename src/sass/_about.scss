@@ -2,38 +2,72 @@
      background-color: $Main-background;
      margin-left: auto;
      margin-right: auto;
-
      background-repeat: no-repeat;
-     background-position: 50px 30px;
+     background-image: url(../images/about/aboutbg1x-mobile.jpg);
+     background-size: contain;
+     background-position: 20% 30%;
+     width: 100%;
+
     }
     .about__label{
+        font-family: Titan one;
+        font-style: regular;
+        font-size: 18px;
+        line-height: 1.2;
         padding-top: 125px;
         margin-bottom: 15px;
         text-align: center;
         color: $Light-accent;
+        text-transform: uppercase;
     }
     .about__title{
+        font-family: Titan one;
+        font-style: regular;
+        font-size: 34px;
+        line-height: 1.14;
+        letter-spacing: 4%;
         color: $accent;
         margin-bottom: 30px;
         text-align: center;
+        text-transform: uppercase;
+
+       
     }
 
-    .about__list{
+
+    .about__content{
+       
         margin-left: 50px;
         margin-right: 50px;
         margin-bottom: 30px;
+        
     }
-    .about__item{
+   
+    .about__subtitle{
+        font-size: 12px;
         margin-bottom: 30px;
+    
+    & .about__text{
+       
+        font-style: medium;
+        font-size: 12px;
+        line-height: 1.6;
+        color: $Secondary-text;
+        
     }
+}
+      
+
     .about__button{
        width: 175px;
        height: 45px;
        background-color: $Light-text;
        border-radius: 22px;
-        color: $accent;
+       color: $accent;
         border-color: transparent;
-        margin-left: 130px;
-              
+       margin-left: 130px;
+        font-style: 700;
+        font-size: 14px;
+        line-height: 1.3;
+       
     }
-
