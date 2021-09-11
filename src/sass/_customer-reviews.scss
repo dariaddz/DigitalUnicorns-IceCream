@@ -1,5 +1,7 @@
 
-
+.customer-reviews {
+    background-color: #fff ;
+}
 .customer-reviews__img {
     margin-bottom: 30px;
     margin-top: 40px;
@@ -20,7 +22,7 @@
     }
 }
 
-.bg {
+.background {
     background: #FAFAFA;
     position: relative;
     padding: 45px 50px 25px 50px;
@@ -126,4 +128,33 @@
             font-size: 20px;       
         }
 
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: rgb(224, 34, 34);
+    background-image: url(../images/customer-reviews/house-button.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 13px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
 }
