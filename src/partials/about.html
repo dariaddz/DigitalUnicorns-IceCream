@@ -3,7 +3,10 @@
     <p class="about__label">Tradition and love</p>
 <h2 class="about__title"> How - it's <br> made ?</h2>
 <div class="about__thumb">
-<img src="./images/about/cow1x-mobile.png" alt="корова">
+<img
+ srcset="./images/about/cow1x-tablet.png 900w,
+        ./images/about/cow2x-desctop.png 1200w"
+ src="./images/about/cow1x-tablet.png" alt="корова" width="100%" >
 </div>
 <div class="about__content">
     <p class="about__subtitle">
@@ -19,8 +22,8 @@
 </div>
 <button class="about__button">
 Read more 
-<svg class="about__icon" width="15" height="15">
-    <use href="./images/about/vector.svg"></use>
+<svg class="about__icon" width="10" height="10">
+    <use href="./images/about/symbol-defs.svg#icon-Vector-about"></use>
 </svg>
 </button>
 
