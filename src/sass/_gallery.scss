@@ -1,0 +1,13 @@
+.gallery {
+  padding: 20px 0px;
+  margin: 0px;
+
+  background-image: linear-gradient(to bottom, $Main-background, $Light-text);
+  @media screen and (min-width: 768px) {
+    padding: 60px 0px;
+  }
+}
+
+.gallery__img {
+  width: 100%;
+}
