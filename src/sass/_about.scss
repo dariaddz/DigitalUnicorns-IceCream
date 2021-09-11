@@ -3,11 +3,16 @@
      margin-left: auto;
      margin-right: auto;
      background-repeat: no-repeat;
-     background-image: url(../images/about/aboutbg1x-mobile.jpg);
+     background-image: url(../images/about/sectionbg1x-mobile.png);
      background-size: contain;
-     background-position: 20% 30%;
-     width: 100%;
-
+     background-position: 50% 90%;
+    
+     @media screen and (min-width:768px) {
+         background-image: none;
+     }
+     @media screen and (min-width:1200px) {
+         background-image: url(../images/about/sectionbg1x-desktop.png) ;
+     }
     }
     .about__label{
         font-family: Titan one;
@@ -19,6 +24,13 @@
         text-align: center;
         color: $Light-accent;
         text-transform: uppercase;
+
+        @media screen and (min-width:768px) {
+            font-size: 26px;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 30px;
+        }
     }
     .about__title{
         font-family: Titan one;
@@ -28,34 +40,96 @@
         letter-spacing: 4%;
         color: $accent;
         margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
         text-align: center;
-        text-transform: uppercase;
-
-       
+        text-transform: uppercase; 
+    
+    @media screen and (min-width:768px) {
+        font-size: 48px;
+        br{
+            display: none;
+        }
     }
+    @media screen and (min-width:1200px) {
+        font-size: 58px;
+        letter-spacing: 6%;
+        br{
+            display: none;
+        }
+    }
+}
+   
+    .about__thumb{
+        margin-left:20px;
+        margin-bottom: 30px;
 
+        @media screen and (min-width:768px){
+            width: 340px;
+            height: 79px;
+            margin-left: 30px;
+            margin-right: 20px;
+           float: left;
+         
+        }
+        @media screen and (min-width:1200px) {
+            width: 516px;
+            height: 516px;
+            
+           
+        }
+    }
 
     .about__content{
        
-        margin-left: 50px;
-        margin-right: 50px;
+        width: 220px;
         margin-bottom: 30px;
-        
+        margin-left: auto;
+        margin-right: auto;
+     
+        @media screen and (min-width:768px){
+            
+         margin-right: 20px;
+         width: 340px;
+        }
+        @media screen and (min-width:1200px) {
+            width: 416px;
+            
+           
+        }
     }
    
     .about__subtitle{
         font-size: 12px;
-        margin-bottom: 30px;
-    
-    & .about__text{
+        margin-bottom: 50px;
+
        
-        font-style: medium;
+    }
+    .about__text{
+       
+        font-style: 500;
         font-size: 12px;
         line-height: 1.6;
         color: $Secondary-text;
+        margin-bottom: 30px;
+
         
     }
-}
+    .about__text--secondary{
+        font-style: 500;
+        font-size: 12px;
+        line-height: 1.6;
+        color: $Secondary-text;
+        margin-bottom: 30px;
+
+        @media screen and (min-width:768px){
+            
+            margin-right: 20px;
+            width: 340px;
+   
+           }
+    }
+
       
 
     .about__button{
@@ -65,9 +139,32 @@
        border-radius: 22px;
        color: $accent;
         border-color: transparent;
-        margin-left: 130px;
-        font-style: 700;
+       margin-left: 130px;
+       font-style: normal;
+       font-family: DM Sans;
+        font-weight: 700;
         font-size: 14px;
         line-height: 1.3;
+        cursor: pointer;
+
+        @media screen and (min-width:768px){
+            
+            margin-left: 350px;
+        
+           }
+           @media screen and (min-width:1200px) {
+               margin-left: 500px;
+           }
  
     }
+    
+
+ .about__icon{
+     margin-left: 15px;
+
+    .about__button &:hover, 
+    .about__button &:focus{
+        color: currentColor;
+    }
+ }
+  
