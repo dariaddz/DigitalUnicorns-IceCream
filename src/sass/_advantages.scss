@@ -1,7 +1,10 @@
 /* advantage-list */
 .advantage {
-  background-color: $Main-background;
   padding: 20px 0px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
 }
 
 .advantage-list {
@@ -92,6 +95,7 @@
 }
 
 .advantage-list__title {
+  display: block;
   margin-top: 30px;
   margin-bottom: 10px;
   color: $accent;
