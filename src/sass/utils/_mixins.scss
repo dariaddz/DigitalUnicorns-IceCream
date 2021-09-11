@@ -7,3 +7,13 @@
     }
   }
 }
+
+@mixin imaginize($images, $baseSelector) {
+  @each $image in $images {
+    $idx: index($images, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
