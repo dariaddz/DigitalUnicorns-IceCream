@@ -1,6 +1,17 @@
 
 .customer-reviews {
-    background-color: #fff ;
+    background-color: $Light-text ;
+
+
+    @media screen and(min-width: 320px) {
+       min-height: 550px;  
+    }
+    @media screen and(min-width: 768px) {
+        height: 500px;  
+    }
+    
+
+   // background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
 }
 .customer-reviews__img {
     margin-bottom: 30px;
@@ -23,7 +34,7 @@
 }
 
 .background {
-    background: #FAFAFA;
+    background: $Light-secondary-text;
     position: relative;
     padding: 45px 50px 25px 50px;
 
@@ -67,7 +78,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 2.58;
-    color: #000;
+    color: $Main-text;
      background-image: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 28px, #E1E1E1 19px, transparent 30px);
 
     @media screen and(min-width: 768px) {
@@ -113,7 +124,7 @@
 
 
 .customer-reviews__city {
-    color: #000;
+    color: $Main-text;
     font-weight: 500;
     font-size: 14px;
     line-height:1.85;
@@ -132,7 +143,7 @@
 
 .slick-dots li.slick-active button:before {
     opacity: .75;
-    color: rgb(224, 34, 34);
+    color: $Dark-accent-icon;
     background-image: url(../images/customer-reviews/house-button.svg);
     background-repeat: no-repeat;
     content: "";
@@ -155,6 +166,6 @@
     content: '•';
     text-align: center;
     opacity: .25;
-    color: black;
+    color: $Main-text;
     -webkit-font-smoothing: antialiased;
 }
