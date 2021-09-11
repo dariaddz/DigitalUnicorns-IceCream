@@ -1,66 +1,116 @@
 .products {
-  padding-top: 121px;
-  padding-bottom: 98px;
+  font-family: $secondary-font;
 
   background-color: white;
 
   text-align: center;
+
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 125;
+    padding-bottom: 110px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 130;
+    padding-bottom: 120px;
+  }
 }
 
 .products__label {
-  margin-bottom: 15px;
-  font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1,16;
 
   text-transform: uppercase;
 
-  color: #FFA5BA;
+  color: $Light-accent;
 
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+  }
 }
 
 .products__title {
-  font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1,14;
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #D41443;
+  color: $accent;
 
-  margin-bottom: 140px;
+  margin-bottom: 145px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1,12;
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1,17;
+    margin-bottom: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.products-list {
+  display: flex;
+  margin: -10px;
+}
+
+  .products-list__item {
+    width: calc((100% - 3 * 20px)/3);
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products-list {
+    display: flex;
+    margin: -15px;
+  }
+
+  .products-list__item {
+    width: calc((100% - 3 * 30px)/3);
+    margin: 15px;
+  }
 }
 
 .products-list__item  {
   position: relative;
 
-  background-color: #fff;
+  background-color: $Main-background;
   border-radius: 24px;
 
-  padding: 160px 40px 40px 40px;
+  padding: 150px 40px 40px 40px;
+
+  @media screen and (min-width: 768px) {
+    padding: 120px 11px 40px 11px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 160px 45px 50px 45px;
+  }
 
   &:not(:last-child) {
+     @media screen and (max-width: 767px) {
     margin-bottom: 130px;
   }
 }
-
-$colors: 
-"#FFB8CA",
-"#F0D1A5",
-"#C2E297";
+}
 
 @include colorize($colors, ".products-list__item");
-
-$images: 
-"url(../images/products/icecream-1.png)",
-"url(../images/products/icecream-2.png)",
-"url(../images/products/icecream-3.png)";
 
 @include imaginize($images, ".products-list__item");
 
@@ -77,19 +127,28 @@ $images:
 
   background-image: url(../images/products/icecream-1.png);
   background-size: contain;
+
+@media screen and (min-width: 768px) {
+  width: 220px;
+  height: 224px;
+}
+
+@media screen and (min-width: 1280px) {
+  top: -5%;
+  width: 335px;
+  height: 335px;
+}
 }
 
 .products-list__title {
-  font-family: Titan One;
-  font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1,15;
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: $Light-text;
 
   &::after {
     content: '';
@@ -108,17 +167,24 @@ $images:
 }
 
 .products-list__description {
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: $main-font;
   font-weight: bold;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1,5;
 
   letter-spacing: 0.04em;
 
-  color: #FFFFFF;
+  color: $Light-text;
 
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
 }
 
 .products-list__button {
@@ -135,4 +201,3 @@ $images:
 
    padding: 0;
 }
-
