@@ -49,17 +49,7 @@
   }
 }
 
-$colors: 
-"#FFB8CA",
-"#F0D1A5",
-"#C2E297";
-
 @include colorize($colors, ".products-list__item");
-
-$images: 
-"url(../images/products/icecream-1.png)",
-"url(../images/products/icecream-2.png)",
-"url(../images/products/icecream-3.png)";
 
 @include imaginize($images, ".products-list__item");
 
