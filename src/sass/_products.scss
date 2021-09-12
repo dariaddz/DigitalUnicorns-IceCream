@@ -104,6 +104,14 @@
 
 @include imaginize($images, ".products-list__item");
 
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+
+@include imaginize2x($images2x, ".products-list__item");
+
+  }
+  
 .products-list__item::before {
   position: absolute;
   top: 0%;

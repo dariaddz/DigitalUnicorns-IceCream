@@ -17,3 +17,13 @@
     }
   }
 }
+
+@mixin imaginize2x($images2x, $baseSelector) {
+  @each $image in $images2x {
+    $idx: index($images2x, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
