@@ -7,7 +7,7 @@
     }
   }
 }
-// Миксины изображений секции "Products"под мобильные
+// Миксины изображений секции "Products" под мобильные
 @mixin imaginize($images, $baseSelector) {
   @each $image in $images {
     $idx: index($images, $image);
@@ -28,7 +28,7 @@
   }
 }
 
-// Миксины изображений секции "Products"под планшеты
+// Миксины изображений секции "Products" под планшеты
 @mixin imaginize-220($images-220, $baseSelector) {
   @each $image in $images-220 {
     $idx: index($images-220, $image);
@@ -49,7 +49,7 @@
   }
 }
 
-// Миксины изображений секции "Products"под ПК
+// Миксины изображений секции "Products" под ПК
 @mixin imaginize-335($images-335, $baseSelector) {
   @each $image in $images-335 {
     $idx: index($images-335, $image);
