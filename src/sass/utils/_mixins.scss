@@ -18,6 +18,7 @@
   }
 }
 
+
 @mixin imaginize2x($images2x, $baseSelector) {
   @each $image in $images2x {
     $idx: index($images2x, $image);
@@ -70,3 +71,6 @@
   }
 }
 
+@mixin transit($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
