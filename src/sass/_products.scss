@@ -1,7 +1,7 @@
 .products {
   font-family: $secondary-font;
 
-  background-color: white;
+  background-color: $Main-background;
 
   text-align: center;
 
@@ -22,7 +22,7 @@
 .products__label {
   font-weight: normal;
   font-size: 18px;
-  line-height: 1,16;
+  line-height: 1.16;
 
   text-transform: uppercase;
 
@@ -41,7 +41,7 @@
 .products__title {
   font-weight: normal;
   font-size: 34px;
-  line-height: 1,14;
+  line-height: 1.14;
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -52,39 +52,27 @@
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: 1,12;
+    line-height: 1.12;
     margin-bottom: 150px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 58px;
-    line-height: 1,17;
+    line-height: 1.17;
     margin-bottom: 260px;
   }
 }
 
-@media screen and (min-width: 768px) {
 .products-list {
-  display: flex;
-  margin: -10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -10px;
 }
 
-  .products-list__item {
-    width: calc((100% - 3 * 20px)/3);
-    margin: 10px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .products-list {
+  @media screen and (min-width: 1280px) {
     display: flex;
     margin: -15px;
-  }
-
-  .products-list__item {
-    width: calc((100% - 3 * 30px)/3);
-    margin: 15px;
-  }
+}
 }
 
 .products-list__item  {
@@ -96,6 +84,8 @@
   padding: 150px 40px 40px 40px;
 
   @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 20px)/3);
+    margin: 10px;
     padding: 120px 11px 40px 11px;
   }
 
@@ -105,7 +95,7 @@
 
   &:not(:last-child) {
      @media screen and (max-width: 767px) {
-    margin-bottom: 130px;
+      margin-bottom: 130px;
   }
 }
 }
@@ -126,7 +116,7 @@
   height: 252px;
 
   background-image: url(../images/products/icecream-1.png);
-  background-size: contain;
+  background-size: cover;
 
 @media screen and (min-width: 768px) {
   width: 220px;
@@ -143,7 +133,7 @@
 .products-list__title {
   font-weight: normal;
   font-size: 20px;
-  line-height: 1,15;
+  line-height: 1.15;
 
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -157,7 +147,7 @@
     height: 6px;
 
     background-image: url(../images/products/dots.png);
-    background-size: contain;
+    background-size: cover;
 
     margin-left: auto;
     margin-right: auto;
@@ -170,7 +160,7 @@
   font-family: $main-font;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1,5;
+  line-height: 1.5;
 
   letter-spacing: 0.04em;
 
@@ -192,7 +182,7 @@
   height: 40px;
  
   background-image: url(../images/products/arrow-right.png);
-  background-size: contain;
+  background-size: cover;
 
   border: transparent;
   border-radius: 50%;

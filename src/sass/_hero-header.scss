@@ -5,26 +5,62 @@
 .hero__container {
   position: relative;
   height: 500px;
+  padding-top: 6px;
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 665px;
+  }
 }
 
 /* хедер */
+.header {
+  margin-bottom: 35px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 85px;
+  }
+}
 .logo {
   display: block;
-  padding-top: 6px;
 }
 .header__site-nav-list {
   display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.header__site-nav-item + .header__site-nav-item {
+  margin-left: 35px;
+}
+.header__site-nav-link {
+  font-size: 16px;
+  line-height: 1.31;
+  color: $Light-text;
 }
 .header__modal-btn {
   display: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: block;
+    // position: absolute;
+    // top: 40px;
+    // right: 35px;
+    // z-index: 3;
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 .menu-btn {
-  position: absolute;
-  top: 25px;
-  right: 20px;
-
-  display: inline-block;
-  margin: 0;
+  display: block;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -33,10 +69,20 @@
     display: none;
   }
 }
+.menu-btn--open {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  @media screen and (min-width: 768px) {
+    top: 50px;
+    right: 225px;
+    z-index: 3;
+  }
+}
 /* мобільне меню */
 .mobile-menu {
   position: fixed;
-  padding-top: 60px;
+  padding-top: 25px;
   top: 0;
   right: 0;
   width: 250px;
@@ -55,6 +101,11 @@
 }
 .mobile-menu.is-open {
   transform: translateX(0);
+}
+.menu-btn--close {
+  display: block;
+  margin-bottom: 25px;
+  margin-left: 205px;
 }
 .mobile-menu__modal-btn {
   display: block;
@@ -81,6 +132,10 @@
 }
 
 /* герой */
+.hero__content-container {
+  display: flex;
+  justify-content: space-between;
+}
 .hero__title {
   margin-bottom: 20px;
 
@@ -92,30 +147,139 @@
   text-transform: uppercase;
 
   color: $Light-text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+  }
 }
 .hero__title-accent {
   font-size: 48px;
 
   color: $accent;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
 }
 .hero__title-box {
-  position: absolute;
-  left: 20px;
-  bottom: 160px;
+  // position: absolute;
+  // left: 20px;
+  // bottom: 160px;
   z-index: 10;
+  // @media screen and (min-width: 768px) {
+  //   left: 35px;
+  //   bottom: 160px;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   left: 150px;
+  //   bottom: 290px;
+  // }
+}
+.hero__btn + .hero__btn {
+  margin-left: 10px;
 }
 .hero__infrostructure-container {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    // position: absolute;
+    display: block;
+    // width: 115px;
+
+    // right: 40px;
+    // bottom: 205px;
+
+    text-align: end;
+  }
+  // @media screen and (min-width: 1280px) {
+  //   right: 120px;
+  //   bottom: 340px;
+  // }
 }
+.hero__infrostructure-box {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: '';
+
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 1;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background-color: $Light-text;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero__infrostructure-box + .hero__infrostructure-box {
+    margin-top: 15px;
+  }
+}
+.hero__infrostructure-number {
+  display: inline-block;
+  position: relative;
+
+  font-family: $secondary-font;
+  font-size: 28px;
+  line-height: 1.15;
+  color: $accent;
+  z-index: 4;
+  padding-top: 3px;
+  padding-right: 3px;
+}
+.hero__infrostructure-text {
+  font-size: 8px;
+  line-height: 1.25;
+  color: $Light-text;
+}
+
 .hero__description-box {
   display: none;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    width: 115px;
+
+    left: 155px;
+    bottom: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    bottom: 55px;
+    left: 335px;
+  }
+}
+.hero__description {
+  font-size: 8px;
+  line-height: 1.5;
+  color: $Light-text;
+
+  margin-bottom: 10px;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 }
 .read-more-btn {
   display: inline-block;
-  margin: 0;
   padding: 0;
+  width: 18px;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+  }
 }
 .circle {
   display: block;
@@ -127,16 +291,60 @@
   position: absolute;
   right: -60px;
   bottom: 75px;
+  @media screen and (min-width: 768px) {
+    height: 324px;
+    width: 324px;
+    border-radius: 162px;
+
+    right: 135px;
+    bottom: 45px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 540px;
+    width: 540px;
+    border-radius: 270px;
+
+    right: 270px;
+    bottom: 75px;
+  }
 }
 .icecream-img {
   position: absolute;
   bottom: 0;
   right: 30px;
   z-index: 3;
+
+  @media screen and (min-width: 768px) {
+    right: 245px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 455px;
+  }
 }
 .so-tasty-img {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 35px;
+    z-index: 3;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 115px;
+  }
 }
 .bio-eco-img {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+    z-index: 3;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 45px;
+    left: 115px;
+  }
 }

@@ -1,8 +1,9 @@
 /* advantage-list */
 .advantage {
-  padding: 20px 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   @media screen and (min-width: 768px) {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 80px;
   }
 }
@@ -77,7 +78,7 @@
 
   // width: 270px;
   @media screen and (max-width: 767px) {
-    margin: 38px 0px;
+    margin-bottom: 38px;
     &:last-child {
       margin-bottom: 0px;
     }
@@ -96,7 +97,7 @@
 
 .advantage-list__title {
   display: block;
-  margin-top: 30px;
+  margin-top: 16px;
   margin-bottom: 10px;
   color: $accent;
   font-family: $secondary-font;

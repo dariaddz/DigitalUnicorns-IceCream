@@ -1,8 +1,12 @@
-<section class="hero">
+<section class="hero" id="hero-section">
 <div class="container hero__container">
   <header class="header">
-      <a href="" class="logo"
-        ><img src="./images/hero/logo.png" alt="IceCream" class="logo-image"
+      <a href="" class="logo">
+        <img 
+        src="./images/hero/logo.png"
+        srcset="./images/hero/logo.png 1x,
+                ./images/hero/logo@2x.png 2x"         
+        alt="IceCream" class="logo-image"
       /></a>
       <nav>
         <ul class="header__site-nav-list">
@@ -24,15 +28,17 @@
       <button class="header__modal-btn" type="button">Buy now</button>
 
       <button
-        class="menu-btn js-open-menu"
+        class="menu-btn menu-btn--open js-open-menu"
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
         <img src="./images/hero/menu-icon-open.svg" alt="open menu" />
       </button>
+
+      <!-- мобільне меню -->
       <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <button class="menu-btn js-close-menu" type="button">
+        <button class="menu-btn menu-btn--close js-close-menu" type="button">
           <img src="./images/hero/icon-close.svg" alt="open menu" />
         </button>
 
@@ -60,29 +66,31 @@
     
   </header>
 
-
-    <div class="hero__title-box">
-
-        <h1 class="hero__title">
-            ice cream <br />
-            made with <br />
-            <span class="hero__title-accent">passion</span>
-        </h1>
-        <nav>
-            <a href="#">Products</a>
-            <a href="#">How it’s made?</a>
-        </nav>
+<div class="hero__content-container">
+  <div class="hero__title-box">
+  
+    <h1 class="hero__title">
+      ice cream <br />
+      made with <br />
+      <span class="hero__title-accent">passion</span>
+    </h1>
+    <nav>
+      <a href="#" class="hero__btn">Products</a>
+      <a href="#" class="hero__btn">How it’s made?</a>
+    </nav>
+  </div>
+  <div class="hero__infrostructure-container">
+    <div class="hero__infrostructure-box">
+      <span class="hero__infrostructure-number">16</span>
+      <p class="hero__infrostructure-text">cafes</p>
     </div>
-    <div class="hero__infrostructure-container">
-      <div class="hero__infrostructure-box">
-        <span class="hero__infrostructure-number">16</span>
-        <p>cafes</p>
-      </div>
-      <div class="hero__infrostructure-box">
-        <span class="hero__infrostructure-number">23</span>
-        <p>food trucks</p>
-      </div>
+    <div class="hero__infrostructure-box">
+      <span class="hero__infrostructure-number">23</span>
+      <p class="hero__infrostructure-text">food trucks</p>
     </div>
+  </div>
+</div>
+    
     <div class="hero__description-box">
       <p class="hero__description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -95,9 +103,31 @@
 
       <!-- фонові зображення -->
         <div class="circle"></div>
-        <img src="./images/hero/icecream_mobile.png" alt="icecream" class="icecream-img">  
-        <img src="./images/hero/so-tasty_tablet.png" alt="girl tastes ice cream" class="so-tasty-img">
-        <img src="./images/hero/bio-eco_tablet.png" alt="jug of milk" class="bio-eco-img">
+          <picture>          
+            <source srcset="./images/hero/icecream_desktop.png 1x, ./images/hero/icecream_desktop@2x.png 2x"
+              media="(min-width: 1280px)">
+            <source srcset="./images/hero/icecream_tablet.png 1x, ./images/hero/icecream_tablet@2x.png 2x"
+              media="(min-width: 768px)">
+            <source srcset="./images/hero/icecream_mobile.png 1x, ./images/hero/icecream_mobile@2x.png 2x"
+              media="(max-width: 767px)">
+            <img class="icecream-img" src="./images/hero/icecream_desktop.png" alt="icecream">
+          </picture>
+        
+          <picture>
+            <source srcset="./images/hero/so-tasty_desktop.png 1x, ./images/hero/so-tasty_desktop@2x.png 2x"
+              media="(min-width: 1280px)">
+            <source srcset="./images/hero/so-tasty_tablet.png 1x, ./images/hero/so-tasty_tablet@2x.png 2x"
+              media="(min-width: 768px)">
+            <img class="so-tasty-img" src="./images/hero/so-tasty_tablet.png" alt="girl tastes ice cream">
+          </picture>
+
+          <picture>
+            <source srcset="./images/hero/bio-eco_desktop.png 1x, ./images/hero/bio-eco_desktop@2x.png 2x"
+              media="(min-width: 1280px)">
+            <source srcset="./images/hero/bio-eco_tablet.png 1x, ./images/hero/bio-eco_tablet@2x.png 2x"
+              media="(min-width: 768px)">
+            <img class="bio-eco-img" src="./images/hero/bio-eco_tablet.png" alt="jug of milk">
+          </picture>
 
 </div>
 </section>

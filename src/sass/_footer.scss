@@ -6,6 +6,10 @@ footer {
     padding-top: 80px;
     padding-bottom: 20px;
   }
+  @media (min-width: 1280px) {
+    padding-top: 80px;
+    padding-bottom: 15px;
+  }
 }
 
 .footer__container {
@@ -16,16 +20,25 @@ footer {
     justify-content: space-between;
     margin-bottom: 90px;
   }
+  @media (min-width: 1280px) {
+    margin-bottom: 105px;
+  }
 }
+// footer title
+
 .footer__title {
   margin-bottom: 45px;
+  width: 230px;
   @media (min-width: 768px) {
     margin-bottom: 0;
+    width: 340px;
+  }
+  @media (min-width: 1280px) {
+    width: auto;
   }
 }
 .footer__subtitle {
   margin-bottom: 20px;
-  width: 230px;
 
   font-family: $secondary-font;
   font-weight: 400;
@@ -41,7 +54,6 @@ footer {
 }
 
 .footer__main-title {
-  width: 230px;
   font-family: $secondary-font;
 
   font-weight: 400;
@@ -56,10 +68,15 @@ footer {
   }
 }
 
+// phone socmedia block
+
 .footer__socmedia {
   display: flex;
   justify-content: end;
   margin-bottom: 45px;
+  @media (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
 }
 .footer__link {
   vertical-align: baseline;
@@ -72,7 +89,7 @@ footer {
   justify-content: center;
 
   background-color: $Light-accent-icon;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transit(background-color);
 
   &:hover,
   &:focus {
@@ -103,6 +120,7 @@ footer {
     color: $Button-dark-hover;
   }
 }
+// copyright block
 
 .copyright {
   margin: 0 auto;
@@ -119,6 +137,9 @@ footer {
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 30px;
+  }
+  @media (min-width: 1280px) {
+    padding-top: 20px;
   }
 }
 
