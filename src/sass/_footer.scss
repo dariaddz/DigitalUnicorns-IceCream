@@ -89,7 +89,7 @@ footer {
   justify-content: center;
 
   background-color: $Light-accent-icon;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transit(background-color);
 
   &:hover,
   &:focus {
