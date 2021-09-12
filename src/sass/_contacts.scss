@@ -1,19 +1,14 @@
 .contacts-section {
-  background-image: linear-gradient(to bottom, $Light-text 6%, $Main-background 6%);
+  background-image: linear-gradient(#ffffff) 84px,
+  ($Main-background) 84px;
   padding-bottom: 65px;
 }
 
 @media screen and (min-width: 768px) {
   .contacts-section {
-    background-image: linear-gradient(to bottom, $Light-text 12%, $Main-background 12%);
+    background-image: linear-gradient(#ffffff) 78px,
+    ($Main-background) 78px;
     padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .contacts-section {
-    background-image: linear-gradient(to bottom, $Light-text 15%, $Main-background 15%);
-    
   }
 }
 
