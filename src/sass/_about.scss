@@ -10,7 +10,7 @@
      @media screen and (min-width:768px) {
          background-image: none;
      }
-     @media screen and (min-width:1200px) {
+     @media screen and (min-width:1280px) {
          background-image: url(../images/about/sectionbg1x-desktop.png) ;
      }
     }
@@ -28,7 +28,7 @@
         @media screen and (min-width:768px) {
             font-size: 26px;
         }
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             font-size: 30px;
         }
     }
@@ -51,7 +51,7 @@
             display: none;
         }
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         font-size: 58px;
         letter-spacing: 6%;
         br{
@@ -72,7 +72,7 @@
            float: left;
          
         }
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             width: 516px;
             height: 516px;
             
@@ -92,7 +92,7 @@
          margin-right: 20px;
          width: 340px;
         }
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             width: 416px;
             
            
@@ -151,20 +151,21 @@
             
             margin-left: 350px;
         
-           }
-           @media screen and (min-width:1200px) {
+        }
+           @media screen and (min-width:1280px) {
                margin-left: 500px;
-           }
- 
+        }
     }
+         .about__button:hover, 
+         .about__button:focus{
+            background-color:$Button-light-hover
+        }
+ 
+    
     
 
  .about__icon{
      margin-left: 15px;
 
-    .about__button &:hover, 
-    .about__button &:focus{
-        color: currentColor;
-    }
  }
   
