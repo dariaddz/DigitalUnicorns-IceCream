@@ -1,7 +1,7 @@
 .products {
   font-family: $secondary-font;
 
-  background-color: $Main-background;
+  background-color: white;
 
   text-align: center;
 
@@ -181,7 +181,7 @@
     height: 6px;
 
     background-image: url(../images/products/dots.png);
-    background-size: contain;
+    background-size: 26px 6px;
 
     margin-left: auto;
     margin-right: auto;
@@ -210,6 +210,10 @@
     margin-bottom: 60px;
   }
 }
+
+ #more {
+   display: none;
+ }
 
 .products-list__button {
   width: 40px;
