@@ -9,12 +9,12 @@
   padding-bottom: 100px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 125;
+    padding-top: 125px;
     padding-bottom: 110px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 130;
+    padding-top: 130px;
     padding-bottom: 120px;
   }
 }
@@ -116,7 +116,7 @@
   height: 252px;
 
   background-image: url(../images/products/icecream-1.png);
-  background-size: cover;
+  background-size: contain;
 
 @media screen and (min-width: 768px) {
   width: 220px;
@@ -147,7 +147,7 @@
     height: 6px;
 
     background-image: url(../images/products/dots.png);
-    background-size: cover;
+    background-size: contain;
 
     margin-left: auto;
     margin-right: auto;
@@ -182,7 +182,7 @@
   height: 40px;
  
   background-image: url(../images/products/arrow-right.png);
-  background-size: cover;
+  background-size: contain;
 
   border: transparent;
   border-radius: 50%;
