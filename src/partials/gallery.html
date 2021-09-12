@@ -3,9 +3,15 @@
     <h2 class="section__title visually-hidden">Gallery</h2>
     <img
       class="gallery__img"
-      srcset="./images/gallery/gallery1.png 900w, ./images/gallery/gallery1_2x.png 1200w"
-      src="./images/gallery/gallery1.png"
-      alt="галерея"
+      srcset="
+        ./images/gallery/gallery320.png   320w,
+        ./images/gallery/gallery768.png   768w,
+        ./images/gallery/gallery1280.png 1280w,
+        ./images/gallery/gallery2000.png 2000w
+      "
+      sizes="(min-width: 2000px) 2000px, (min-width: 769px) 1280px, (min-width: 320px) 768px 100vw"
+      src="./images/gallery/gallery320.png"
+      alt="Ice cream gallery"
     />
   </div>
 </section>
