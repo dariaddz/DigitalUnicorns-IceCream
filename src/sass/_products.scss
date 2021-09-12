@@ -104,14 +104,40 @@
 
 @include imaginize($images, ".products-list__item");
 
-   @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
 
 @include imaginize2x($images2x, ".products-list__item");
 
   }
-  
+
+@media screen and (min-width:768px) {
+
+  @include imaginize-220($images-220, ".products-list__item");
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
+    @include imaginize-220-2x($images-220-2x, ".products-list__item");
+
+  }
+}
+
+@media screen and (min-width:1280px) {
+
+  @include imaginize-335($images-335, ".products-list__item");
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
+    @include imaginize-335-2x($images-335-2x, ".products-list__item");
+
+  }
+}
+
 .products-list__item::before {
   position: absolute;
   top: 0%;
