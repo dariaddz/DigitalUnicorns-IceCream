@@ -1,19 +1,31 @@
 .contacts-section {
-  background-image: linear-gradient(#ffffff) 84px,
-  ($Main-background) 84px;
+  background-image: linear-gradient(($Light-text) 84px, ($Main-background) 84px);
   padding-bottom: 65px;
 }
 
 @media screen and (min-width: 768px) {
   .contacts-section {
-    background-image: linear-gradient(#ffffff) 78px,
-    ($Main-background) 78px;
-    padding-bottom: 60px;
+    background-image: linear-gradient(($Light-text) 78px, ($Main-background) 78px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-section {
+    background-image: url(../images/contacts/contacts-bg-1x.png), linear-gradient(($Light-text) 102px, ($Main-background) 102px);
+    background-repeat: no-repeat;
+    background-position: 0px 102px, 0px 0px;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contacts-section {
+    background-image: url(../images/contacts/contacts-bg-2x.png), linear-gradient(($Light-text) 102px, ($Main-background) 102px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .contacts-container {
+  .container--mob {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -34,21 +46,30 @@
 @media screen and (min-width: 768px) {
   .contacts-list {
     flex-wrap: wrap;
-    margin: -10;
+    margin: -10px;
     margin-bottom: 81px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-list {
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-bottom: 86px;
   }
 }
 
 .contacts-list__item {
   min-width: 220px;
   padding: 43px 20px;
-  background-color: #ffffff;
+  background-color: $Light-text;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 
 @media screen and (min-width: 768px) {
   .contacts-list__item {
+    min-width: 0px;
     margin: 10px;
     padding: 50px 31px;
     flex-basis: calc((100% - 3 * 20px) / 3);
@@ -61,6 +82,15 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contacts-list__item {
+    width: 330px;
+    margin: 15px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    padding: 51px 43px;
+  }
+}
+
 .contacts-main {
   margin-bottom: 25px;
   border-radius: 4px;
@@ -69,6 +99,12 @@
 @media screen and (min-width: 768px) {
   .contacts-main {
     margin-bottom: 30px;
+  }
+}  
+
+@media screen and (min-width: 1280px) {
+  .contacts-main {
+    margin-bottom: 32px;
   }
 }  
 
@@ -109,13 +145,31 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contacts-main__subtitle {
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+}
+
 .contacts__text {
   line-height: 1.86;
   letter-spacing: 0.04em;
 }
 
+.contacts__text--subtitle {
+  line-height: 1.83;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__text--subtitle {
+    margin-bottom: 14px;
+  }
+}
+
 .contacts__text--primary {
-  color: $Main-text;
   line-height: 1.83;
   letter-spacing: normal;
 }
@@ -127,6 +181,7 @@
 }
 
 .contacts-description__text {
+  color: $Secondary-text;
   margin-bottom: 25px;
   font-size: 12px;
   line-height: 1.5;
@@ -137,6 +192,14 @@
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.66;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-description__text {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.83;
   }
 }
 
@@ -151,6 +214,13 @@
   .contacts-middle {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-middle {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -176,8 +246,13 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contacts__address {
+    padding-top: 32px;
+  }
+}
+
 .contacts__link {
-  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -193,7 +268,13 @@
   }
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: $Main-text;
+@media screen and (min-width: 1280px) {
+  .contacts__link {
+    font-size: 16px;
+  
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+ }
 }
