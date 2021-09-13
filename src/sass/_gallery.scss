@@ -32,6 +32,7 @@
 
 .gallery__image {
   margin-bottom: 8px;
+  border-radius: 15%;
 }
 
 .gallery__image:hover,
@@ -40,7 +41,7 @@
   transform: scale(2);
   // opacity: 0.8;
   -webkit-filter: saturate(200%);
-  filter: saturate(180%);
+  filter: saturate(160%);
   @media screen and (min-width: 768px) {
     transform: scale(1.3);
   }
