@@ -3,18 +3,23 @@
      margin-left: auto;
      margin-right: auto;
      background-repeat: no-repeat;
-     background-image: url(../images/about/sectionbg1x-mobile.png);
+     background-image: url('../images/about/sectionbg1x-mobile.png');
      background-size: contain;
      background-position: 50% 90%;
+
+     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image:  url('../images/about/sectionbg2x-mobile.png');
+    }
     
      @media screen and (min-width:768px) {
          background-image: none;
      }
      @media screen and (min-width:1280px) {
-         background-image: url(../images/about/sectionbg2x-desktop.png) ;
-         
+         background-image: url('../images/about/sectionbg1x-desktop.png');
         }
-
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image:  url('../images/about/sectionbg2x-desktop.png');
+        }
     }
     .about__container{
         padding-top: 125px;
