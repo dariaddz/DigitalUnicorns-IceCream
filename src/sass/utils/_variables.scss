@@ -20,14 +20,41 @@ $Secondary-icon: #d9d9d9;
 $main-font: 'Dm Sans', sans-serif;
 $secondary-font: 'Titan One', sans-serif;
 
-// Перменные для миксинов секции "Products"
+// Перменные для миксинов цветов секции "Products"
 $colors: 
 "#FFB8CA",
 "#F0D1A5",
 "#C2E297";
 
+// Перменные для миксинов изображений секции "Products" под мобильные 
 $images: 
 "url(../images/products/icecream-1.png)",
 "url(../images/products/icecream-2.png)",
 "url(../images/products/icecream-3.png)";
 
+$images2x: 
+"url(../images/products/icecream-1@2x.png)",
+"url(../images/products/icecream-2@2x.png)",
+"url(../images/products/icecream-3@2x.png)";
+
+// Перменные для миксинов изображений секции "Products" под планшеты 
+$images-220: 
+"url(../images/products/icecream-1-220.png)",
+"url(../images/products/icecream-2-220.png)",
+"url(../images/products/icecream-3-220.png)";
+
+$images-220-2x: 
+"url(../images/products/icecream-1-220@2x.png)",
+"url(../images/products/icecream-2-220@2x.png)",
+"url(../images/products/icecream-3-220@2x.png)";
+
+// Перменные для миксинов изображений секции "Products" под ПК 
+$images-335: 
+"url(../images/products/icecream-1-335.png)",
+"url(../images/products/icecream-2-335.png)",
+"url(../images/products/icecream-3-335.png)";
+
+$images-335-2x: 
+"url(../images/products/icecream-1-335@2x.png)",
+"url(../images/products/icecream-2-335@2x.png)",
+"url(../images/products/icecream-3-335@2x.png)";

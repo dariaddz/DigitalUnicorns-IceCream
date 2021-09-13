@@ -1,17 +1,26 @@
 
 .customer-reviews {
     background-color: $Light-text ;
+    padding-bottom: 85px;
+    
+    
+    
 
-
-    @media screen and(min-width: 320px) {
-       min-height: 550px;  
-    }
     @media screen and(min-width: 768px) {
-        height: 500px;  
+       //min-height: 550px;  
+       padding-bottom: 120px;
+    }
+    @media screen and(min-width: 1280px) {
+       // height: 500px;
+       padding-bottom: 130px;  
     }
     
 
    // background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
 .customer-reviews__img {
     margin-bottom: 30px;
@@ -116,12 +125,8 @@
         @media screen and(min-width: 1280px) {
             left: 48%;       
         }
-        
-
     }
-    
 }
-
 
 .customer-reviews__city {
     color: $Main-text;
