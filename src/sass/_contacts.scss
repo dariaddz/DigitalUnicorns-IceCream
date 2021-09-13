@@ -102,6 +102,12 @@
   }
 }  
 
+@media screen and (min-width: 1280px) {
+  .contacts-main {
+    margin-bottom: 32px;
+  }
+}  
+
 .contacts-main--primary {
   width: 80px;
   background-color: $Background-accent1;
@@ -136,6 +142,13 @@
   .contacts-main__subtitle {
     font-size: 16px;
     line-height: 1.88;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-main__subtitle {
+    line-height: 1.86;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -258,9 +271,10 @@
 @media screen and (min-width: 1280px) {
   .contacts__link {
     font-size: 16px;
+  
+  &:hover,
+  &:focus {
+    color: $accent;
   }
-}
-.contacts__link:hover,
-.contacts__link:focus {
-  color: $accent;
+ }
 }
