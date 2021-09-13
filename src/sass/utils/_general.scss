@@ -59,3 +59,42 @@ a {
   height: 1px;
   margin: -1px;
 }
+
+.light-btn {
+  padding: 10px 20px;
+  background-color: $Light-text;
+  border-radius: 22px;
+  color: $accent;
+  border-color: transparent;
+
+  font-style: normal;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  cursor: pointer;
+  @include transit(background-color);
+  &:hover,
+  &:focus {
+    background-color: $Button-light-hover;
+  }
+}
+.dark-btn {
+  padding: 10px 20px;
+  background-color: $accent;
+  border-radius: 22px;
+  color: $Light-text;
+  border-color: transparent;
+
+  font-style: normal;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  cursor: pointer;
+  @include transit(background-color);
+  &:hover,
+  &:focus {
+    background-color: $Dark-accent-icon;
+  }
+}
