@@ -7,6 +7,7 @@
     }
   }
 }
+
 // Миксины изображений секции "Products" под мобильные
 @mixin imaginize($images, $baseSelector) {
   @each $image in $images {
@@ -17,7 +18,6 @@
     }
   }
 }
-
 
 @mixin imaginize2x($images2x, $baseSelector) {
   @each $image in $images2x {

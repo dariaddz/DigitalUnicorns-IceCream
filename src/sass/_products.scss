@@ -1,7 +1,7 @@
 .products {
   font-family: $secondary-font;
 
-  background-color: $Main-background;
+  background-color: white;
 
   text-align: center;
 
@@ -164,6 +164,34 @@
 }
 }
 
+.meta-container {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.meta-container.flip {
+  transform: rotateY(180deg);
+}
+
+.front-container,
+.back-container {
+  backface-visibility: hidden;
+}
+
+.front-container {
+  height: 100%;
+  transform: rotateX(0deg);
+}
+
+.back-container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0px;
+
+  transform: rotateY(180deg);
+}
+
 .products-list__title {
   font-weight: normal;
   font-size: 20px;
@@ -181,7 +209,7 @@
     height: 6px;
 
     background-image: url(../images/products/dots.png);
-    background-size: contain;
+    background-size: 26px 6px;
 
     margin-left: auto;
     margin-right: auto;
