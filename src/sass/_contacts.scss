@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 1280px) {
   .contacts-section {
-    background-image: url(../images/contacts/contacts-bg-1x.png), linear-gradient(($Light-text) 102px, ($Main-background) 102px);
+    background-image: url(../images/contacts/contacts-bg@1x.png), linear-gradient(($Light-text) 102px, ($Main-background) 102px);
     background-repeat: no-repeat;
     background-position: 0px 102px, 0px 0px;
     background-size: contain;
@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts-section {
-    background-image: url(../images/contacts/contacts-bg-2x.png), linear-gradient(($Light-text) 102px, ($Main-background) 102px);
+    background-image: url(../images/contacts/contacts-bg@2x.png), linear-gradient(($Light-text) 102px, ($Main-background) 102px);
   }
 }
 
@@ -237,18 +237,18 @@
 .contacts__address {
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 768px) {
   .contacts__address {
-    padding-top: 30px;
+    margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts__address {
-    padding-top: 32px;
+    margin-top: 32px;
   }
 }
 
@@ -292,16 +292,18 @@
 }
 
 @media screen and (max-width: 767px) {
+  .contacts-btn__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
 .dark-btn--mobc {
   min-width: 160px;
   
-  &:not(:last-child) {
-        margin-bottom: 10px;
-
   &:hover,
   &:focus {
         background-color: $Button-dark-hover;
-      }
     }
   }
 }
@@ -313,19 +315,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contacts-btn__item:not(:last-child) {
+    margin-right: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .dark-btn--tabc {
     min-width: 191px;
     
-    &:not(:last-child) {
-          margin-right: 14px;
-  
     &:hover,
     &:focus {
           background-color: $Button-dark-hover;
-        }
-      }
     }
   }
+}
   
 @media screen and (min-width: 768px) {
   .light-btn--tabc {
@@ -334,19 +338,21 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .contacts-btn__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .dark-btn--descc {
     min-width: 198px;
     
-    &:not(:last-child) {
-          margin-right: 15px;
-  
     &:hover,
     &:focus {
           background-color: $Button-dark-hover;
-        }
-      }
     }
   }
+}
   
 @media screen and (min-width: 1280px) {
   .light-btn--descc {
@@ -357,4 +363,3 @@
 .contacts__icon {
   margin-left: 13px;
 }
-
