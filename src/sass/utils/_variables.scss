@@ -27,34 +27,34 @@ $colors:
 "#C2E297";
 
 // Перменные для миксинов изображений секции "Products" под мобильные 
-$images: 
-"url(../images/products/icecream-1.png)",
-"url(../images/products/icecream-2.png)",
-"url(../images/products/icecream-3.png)";
+$images-mobile: 
+"url(../images/products/icecream1-mobile@1x.png)",
+"url(../images/products/icecream2-mobile@1x.png)",
+"url(../images/products/icecream3-mobile@1x.png)";
 
-$images2x: 
-"url(../images/products/icecream-1@2x.png)",
-"url(../images/products/icecream-2@2x.png)",
-"url(../images/products/icecream-3@2x.png)";
+$images-mobile2x: 
+"url(../images/products/icecream1-mobile@2x.png)",
+"url(../images/products/icecream2-mobile@2x.png)",
+"url(../images/products/icecream3-mobile@2x.png)";
 
 // Перменные для миксинов изображений секции "Products" под планшеты 
-$images-220: 
-"url(../images/products/icecream-1-220.png)",
-"url(../images/products/icecream-2-220.png)",
-"url(../images/products/icecream-3-220.png)";
+$images-tablet: 
+"url(../images/products/icecream1-tablet@1x.png)",
+"url(../images/products/icecream2-tablet@1x.png)",
+"url(../images/products/icecream3-tablet@1x.png)";
 
-$images-220-2x: 
-"url(../images/products/icecream-1-220@2x.png)",
-"url(../images/products/icecream-2-220@2x.png)",
-"url(../images/products/icecream-3-220@2x.png)";
+$images-tablet2x: 
+"url(../images/products/icecream1-tablet@2x.png)",
+"url(../images/products/icecream2-tablet@2x.png)",
+"url(../images/products/icecream3-tablet@2x.png)";
 
 // Перменные для миксинов изображений секции "Products" под ПК 
-$images-335: 
-"url(../images/products/icecream-1-335.png)",
-"url(../images/products/icecream-2-335.png)",
-"url(../images/products/icecream-3-335.png)";
+$images-desktop: 
+"url(../images/products/icecream1-desktop@1x.png)",
+"url(../images/products/icecream2-desktop@1x.png)",
+"url(../images/products/icecream3-desktop@1x.png)";
 
-$images-335-2x: 
-"url(../images/products/icecream-1-335@2x.png)",
-"url(../images/products/icecream-2-335@2x.png)",
-"url(../images/products/icecream-3-335@2x.png)";
+$images-desktop2x: 
+"url(../images/products/icecream1-desktop@2x.png)",
+"url(../images/products/icecream2-desktop@2x.png)",
+"url(../images/products/icecream3-desktop@2x.png)";
