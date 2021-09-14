@@ -38,34 +38,11 @@ footer {
   }
 }
 .footer__subtitle {
-  margin-bottom: 20px;
-
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.16;
-  text-transform: uppercase;
-
-  color: $Light-accent;
-  @media (min-width: 768px) {
-    margin-bottom: 15px;
-    font-size: 26px;
-  }
+  text-align: start;
 }
 
 .footer__main-title {
-  font-family: $secondary-font;
-
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: $accent;
-  @media (min-width: 768px) {
-    font-size: 48px;
-  }
+  text-align: start;
 }
 
 // phone socmedia block
