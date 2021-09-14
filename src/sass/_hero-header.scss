@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth; //плавний скрол сторінки
+}
+
 .hero {
   background-color: $Dark-backgroung;
   overflow: hidden;
@@ -195,7 +199,13 @@
 .hero__title-box {
   z-index: 10;
 }
-.hero__btn + .hero__btn {
+.hero__title-btn-list {
+  display: flex;
+}
+.hero__btn {
+  display: inline-block;
+}
+.hero__title-btn-item + .hero__title-btn-item {
   margin-left: 10px;
 }
 .hero__infrostructure-container {
@@ -206,10 +216,14 @@
     text-align: end;
   }
 }
-.hero__infrostructure-box {
+.hero__infrostructure-link {
   display: block;
   position: relative;
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.2, 1.2);
+  }
   &::before {
     content: '';
 

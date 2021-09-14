@@ -1,11 +1,4 @@
 <section id="contacts" class="contacts-section">
-    <img
-        srcset="./images/contacts/contacts-bg-1x.png, 
-                ./images/contacts/contacts-bg-2x.png"
-        src="./images/contacts/contacts-bg-1x.png"
-        alt=""
-        width=""
-    />
     <h2 class="visually-hidden">Contacts</h2>
       <div class="container container--mob">
           <ul class="contacts-list">
@@ -24,8 +17,10 @@
                            <p class="contacts__text contacts__text--secondary">08:00 AM - 16:00 PM</p>
                    </div>
                      <address class="contacts__address">
-                      <a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
-                      <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>    
+                        <ul>
+                            <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+                            <li><a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li> 
+                        </ul>     
                      </address>
               </li>
 
@@ -44,8 +39,10 @@
                         <p class="contacts__text contacts__text--secondary">08:00 AM - 16:00 PM</p>
                  </div>
                    <address class="contacts__address">
-                    <a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
-                    <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>    
+                    <ul>
+                        <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+                        <li><a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li> 
+                    </ul>    
                    </address>
               </li>
 
@@ -64,24 +61,25 @@
                         <p class="contacts__text contacts__text--secondary">08:00 AM - 16:00 PM</p>
                  </div>
                    <address class="contacts__address">
-                    <a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a>
-                    <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>    
+                    <ul>
+                        <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+                        <li><a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a></li> 
+                    </ul>   
                    </address>
-            </li>
+              </li>
           </ul>
       </div>
 
-      <div class="contacts-btn contacts-btn--mobc">
-          <button class="dark-btn dark-btn--mobc dark-btn--tabc dark-btn--descc" type="button">Our Locations
-            <svg class="contacts__icon" width="10" height="10">
-                <use href="./images/contacts/contacts-vector-white.svg#contacts-vector-white"></use>
-            </svg>
-          </button>
+      <ul class="contacts-btn contacts-btn--mobc">
+        <li class="contacts-btn__item">
+            <button class="dark-btn dark-btn--mobc dark-btn--tabc dark-btn--descc" type="button">Our Locations
+            <svg class="contacts__icon" width="10" height="10"><use href="./images/contacts/contacts-vector-white.svg#contacts-vector-white"></use></svg>
+            </button>
+        </li>
+        <li class="contacts-btn__item">
           <button class="light-btn light-btn--mobc light-btn--tabc light-btn--descc" type="button">Franchise
-            <svg class="contacts__icon" width="10" height="10">
-                <use href="./images/contacts/contacts-vector.svg#contacts-vector"></use>
-            </svg>
+            <svg class="contacts__icon" width="10" height="10"><use href="./images/contacts/contacts-vector.svg#contacts-vector"></use></svg>
           </button>
-      </div>
+        </li>
+      </ul>
 </section>
-
