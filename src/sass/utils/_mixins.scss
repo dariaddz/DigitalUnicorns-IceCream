@@ -9,9 +9,9 @@
 }
 
 // Миксины изображений секции "Products" под мобильные
-@mixin imaginize($images, $baseSelector) {
-  @each $image in $images {
-    $idx: index($images, $image);
+@mixin imaginize-mobile($images-mobile, $baseSelector) {
+  @each $image in $images-mobile {
+    $idx: index($images-mobile, $image);
 
     #{$baseSelector}:nth-child(#{$idx})::before {
       background-image: #{$image};
@@ -19,9 +19,9 @@
   }
 }
 
-@mixin imaginize2x($images2x, $baseSelector) {
-  @each $image in $images2x {
-    $idx: index($images2x, $image);
+@mixin imaginize-mobile2x($images-mobile2x, $baseSelector) {
+  @each $image in $images-mobile2x {
+    $idx: index($images-mobile2x, $image);
 
     #{$baseSelector}:nth-child(#{$idx})::before {
       background-image: #{$image};
@@ -30,9 +30,9 @@
 }
 
 // Миксины изображений секции "Products" под планшеты
-@mixin imaginize-220($images-220, $baseSelector) {
-  @each $image in $images-220 {
-    $idx: index($images-220, $image);
+@mixin imaginize-tablet($images-tablet, $baseSelector) {
+  @each $image in $images-tablet {
+    $idx: index($images-tablet, $image);
 
     #{$baseSelector}:nth-child(#{$idx})::before {
       background-image: #{$image};
@@ -40,9 +40,9 @@
   }
 }
 
-@mixin imaginize-220-2x($images-220-2x, $baseSelector) {
-  @each $image in $images-220-2x {
-    $idx: index($images-220-2x, $image);
+@mixin imaginize-tablet2x($images-tablet2x, $baseSelector) {
+  @each $image in $images-tablet2x {
+    $idx: index($images-tablet2x, $image);
 
     #{$baseSelector}:nth-child(#{$idx})::before {
       background-image: #{$image};
@@ -51,9 +51,9 @@
 }
 
 // Миксины изображений секции "Products" под ПК
-@mixin imaginize-335($images-335, $baseSelector) {
-  @each $image in $images-335 {
-    $idx: index($images-335, $image);
+@mixin imaginize-desktop($images-desktop, $baseSelector) {
+  @each $image in $images-desktop {
+    $idx: index($images-desktop, $image);
 
     #{$baseSelector}:nth-child(#{$idx})::before {
       background-image: #{$image};
@@ -61,9 +61,9 @@
   }
 }
 
-@mixin imaginize-335-2x($images-335-2x, $baseSelector) {
-  @each $image in $images-335-2x {
-    $idx: index($images-335-2x, $image);
+@mixin imaginize-desktop2x($images-desktop2x, $baseSelector) {
+  @each $image in $images-desktop2x {
+    $idx: index($images-desktop2x, $image);
 
     #{$baseSelector}:nth-child(#{$idx})::before {
       background-image: #{$image};
