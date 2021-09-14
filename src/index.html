@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
-    <!-- под этой строкой подключаем шрифты -->
     <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
     <link
@@ -31,6 +30,12 @@
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
+
+    <!-- прокрутка страницы наверх -->
+    <div class="scroll-up" id="scroll-up">
+      <img class="scroll-up__img" src="./images/hero/arrow.svg" alt="" />
+    </div>
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
 
@@ -59,10 +64,17 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+
+    <!-- мобильное меню -->
     <script src="./js/mobile-menu.js"></script>
 
+    <!-- открытие модальных окон -->
     <script src="./js/modal.js"></script>
 
+    <!-- карточки Products -->
     <script src="./js/products/readmore.js"></script>
+
+    <!-- для скролла наверх -->
+    <script src="./js/scrollup.js"></script>
   </body>
 </html>
