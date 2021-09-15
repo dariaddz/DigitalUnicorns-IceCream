@@ -24,7 +24,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header__modal-btn light-btn" type="button">
+      <button class="header__modal-btn light-btn" type="button"  data-modal_buy-open>
         Buy now
         <svg class="about__icon" width="10" height="10">
           <use href="./images/about/symbol-defs.svg#icon-Vector-about"></use>
@@ -33,9 +33,9 @@
 
       <button class="menu-btn menu-btn--open js-open-menu" type="button" aria-expanded="false"
         aria-controls="mobile-menu">
-        <svg  width=20 height="12" 
+        <svg  class="menu-btn-icon" width=20 height="12"  fill="currentColor"
           aria-label="mobile menu switcher">
-          <use class="menu-btn-icon" href="./images/hero/symbol-defs__hero-header.svg#menu-icon-open"></use>
+          <use href="./images/hero/symbol-defs__hero-header.svg#menu-icon-open"></use>
         </svg>
       </button>
 
@@ -106,16 +106,7 @@
           <p class="hero__infrostructure-text">food trucks</p>
         </a></li>
       </ul>
-      <!-- <div class="hero__infrostructure-container"> -->
-        <!-- <div class="hero__infrostructure-box"> -->
-          <!-- <span class="hero__infrostructure-number">16</span>
-          <p class="hero__infrostructure-text">cafes</p> -->
-        <!-- </div>
-        <div class="hero__infrostructure-box">
-          <span class="hero__infrostructure-number">23</span>
-          <p class="hero__infrostructure-text">food trucks</p>
-        </div> -->
-      <!-- </div> -->
+
     </div>
 
     <div class="hero__description-box">
@@ -123,13 +114,15 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
-      <button class="read-more-btn" type="button">
-         <img src="./images/hero/arrow.svg" alt="" />
-      </button>
+      <a href="#about" class="read-more-btn">
+        <svg class="arrow-right_btn-icon" fill="currentColor">
+           <use href="./images/hero/symbol-defs__hero.svg#arrow-right"></use>
+         </svg>
+      </a>
     </div>
 
     <!-- фонові зображення -->
-    <button class="icecream-btn" type="button">
+    <button class="icecream-btn" type="button" data-modal_buy-open>
       <picture>
         <source srcset="./images/hero/icecream_desktop@1x.png 1x, ./images/hero/icecream_desktop@2x.png 2x"
         media="(min-width: 1280px)">
@@ -170,5 +163,3 @@
   </div>
 
 </section>
-
-
