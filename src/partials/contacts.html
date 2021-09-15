@@ -1,6 +1,6 @@
 <section id="contacts" class="contacts-section">
     <h2 class="visually-hidden">Contacts</h2>
-      <div class="container container--mob">
+<div class="container container--mob">
           <ul class="contacts-list">
               <li class="contacts-list__item">
                   <div class="contacts-main contacts-main--primary">
@@ -68,7 +68,7 @@
                    </address>
               </li>
           </ul>
-      </div>
+      
 
       <ul class="contacts-btn contacts-btn--mobc">
         <li class="contacts-btn__item">
@@ -77,9 +77,62 @@
             </button>
         </li>
         <li class="contacts-btn__item">
-          <button class="light-btn light-btn--mobc light-btn--tabc light-btn--descc" type="button">Franchise
+          <button data-modal-open class="light-btn light-btn--mobc light-btn--tabc light-btn--descc" type="button">Franchise
             <svg class="contacts__icon" width="10" height="10"><use href="./images/contacts/contacts-vector.svg#contacts-vector"></use></svg>
           </button>
         </li>
       </ul>
+
+<!-- модалка 
+
+<div data-modal class="backdrop is-hidden">
+    <div class="contacts-modal">
+        <form class="contacts-form" autocomplete="off">
+            <h2 class="title">Contact Us</h2>
+            <ul>
+              <li class="contacts-form__item">
+                <label class="contacts-form__label">Name
+                  <input
+                    type="text"
+                    class="contacts-form__input"
+                    name="name"
+                    placeholder=" "/>
+                </label>
+              </li>
+              <li class="contacts-form__item">
+                <label class="contacts-form__label">Phone number
+                  <input
+                    type="tel"
+                    class="contacts-form__input"
+                    name="phone"
+                    placeholder=" "/>
+                </label>
+              </li>
+              <li class="contacts-form__item">
+                <label class="contacts-form__label">Email
+                  <input
+                    type="email"
+                    class="contacts-form__input"
+                    name="mail"
+                    placeholder=" "/>
+                </label>
+              </li>
+              <li class="contacts-form__item">
+                <label class="contacts-form__label">Message
+                  <textarea
+                    class="contacts-form__input contacts-form__input--comment-input"
+                    name="comment"
+                    cols="30"
+                    rows="5"
+                    placeholder="Write text">
+                  </textarea>
+                </label>
+              </li>
+            </ul>
+             <button class="light-btn light-btn--send" type="submit">Send</button> 
+        </form>
+    </div>
+</div> -->
+
+</div>
 </section>
