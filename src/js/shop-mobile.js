@@ -2,7 +2,7 @@
     const refs = {
         openModalBtn: document.querySelector('[data-shop-mobile-open]'),
         // closeModalBtn: document.querySelector('[data-shop-close]'),
-        closeModalBtn: document.querySelector('[data-shopchart-mobile-close]'),
+        closeModalBtn: document.querySelector('[data-shop-mobile-close]'),
         modal: document.querySelector('[data-shop-mobile]'),
     };
 
