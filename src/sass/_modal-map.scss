@@ -1,8 +1,7 @@
 .modal-map {
   background-image: none;
-  overflow-y: auto;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   @media (min-width: 480px) {
     width: 380px;
     height: 600px;
@@ -22,4 +21,13 @@
 .map {
   width: 80%;
   height: 70%;
+}
+
+.map__list :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.subtitle--map {
+  // text-align: start;
+  font-size: 14px;
 }
