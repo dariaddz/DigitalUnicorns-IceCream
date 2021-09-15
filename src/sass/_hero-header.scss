@@ -77,6 +77,7 @@ html {
 }
 .menu-btn--open {
   position: absolute;
+
   top: 25px;
   right: 20px;
 
@@ -86,6 +87,7 @@ html {
   &:hover,
   &:focus {
     color: $Light-text;
+    cursor: pointer;
   }
 
   @media screen and (min-width: 768px) {
@@ -95,6 +97,7 @@ html {
   }
 }
 .menu-btn-icon {
+  display: inline-block;
   fill: currentColor;
 }
 /* мобільне меню */
@@ -134,6 +137,7 @@ html {
   &:hover,
   &:focus {
     color: $accent;
+    cursor: pointer;
   }
 }
 .mobile-menu__modal-btn {
@@ -303,14 +307,34 @@ html {
   }
 }
 .read-more-btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   width: 18px;
+  height: 18px;
+  border-radius: 50%;
   border: none;
-  background-color: transparent;
+  background-color: $Light-text;
+
+  color: $accent;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $accent;
+  }
 
   @media screen and (min-width: 1280px) {
     width: 26px;
+    height: 26px;
+  }
+}
+.arrow-right_btn-icon {
+  width: 9px;
+  height: 9px;
+  @media screen and (min-width: 1280px) {
+    width: 12px;
+    height: 12px;
   }
 }
 .circle {
