@@ -363,3 +363,110 @@
 .contacts__icon {
   margin-left: 13px;
 }
+
+
+
+// //модалка
+
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   opacity: 1;
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   overflow-y: scroll;
+// }
+
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(0.8);
+// }
+
+// .contacts-modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   background-color: $Dark-backgroung;
+//   border-radius: 24px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.1);
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// @media (min-width: 480px) {
+//       width: 380px;
+//       height: 500px;
+//     }
+
+// @media (min-width: 768px) {
+//       width: 450px;
+//       height: 550px;
+//     }
+
+// @media (min-width: 1280px) {
+//       width: 528px;
+//       height: 581px;
+//   }
+// }
+
+
+// .contacts-form {
+//   padding: 40px;
+// }
+
+// .contacts-form__item:not(:last-child) {
+//   margin-bottom: 10px;
+// }
+
+// .contacts-form__label {
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   font-size: 12px;
+//   line-height: 1.16;
+//   letter-spacing: 0.01em;
+// }
+
+// .contacts-form__input {
+//   margin-top: 4px;
+//   padding-top: 11px;
+//   padding-bottom: 11px;
+//   padding-right: 12px;
+//   padding-left: 42px;
+//   border-radius: 4px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:focus {
+//     border-color: $accent;
+//     outline: none;
+//   }
+
+//   &::placeholder {
+//     color: $Main-text;
+//   }
+// }
+
+// .contacts-form__input--comment-input {
+//   padding: 12px 16px;
+// }
+
+// textarea {
+//   resize: none;
+// }
+
+// .light-btn--send {
+//   display: block;
+//   margin-top: 30px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-left: 56px;
+//   padding-right: 55px;
+// }
