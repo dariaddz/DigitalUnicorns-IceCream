@@ -1,0 +1,33 @@
+.modal-map {
+  background-image: none;
+  width: 100vw;
+  height: 100vh;
+  @media (min-width: 480px) {
+    width: 380px;
+    height: 600px;
+  }
+
+  @media (min-width: 768px) {
+    width: 650px;
+    height: 450px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 828px;
+    height: 481px;
+  }
+}
+
+.map {
+  width: 80%;
+  height: 70%;
+}
+
+.map__list :not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.subtitle--map {
+  // text-align: start;
+  font-size: 14px;
+}

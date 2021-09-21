@@ -1,0 +1,227 @@
+.products {
+  font-family: $secondary-font;
+
+  background-color: white;
+
+  text-align: center;
+
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 125px;
+    padding-bottom: 110px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+}
+
+.products__subtitle {
+  margin-bottom: 15px;
+}
+
+.products__title {
+  margin-bottom: 145px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 260px;
+  }
+}
+
+.products-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -10px;
+}
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin: -15px;
+}
+}
+
+.products-list__item  {
+  position: relative;
+
+  background-color: $Main-background;
+  border-radius: 24px;
+
+  padding: 150px 40px 40px 40px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 20px)/3);
+    margin: 10px;
+    padding: 120px 11px 40px 11px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 160px 45px 50px 45px;
+  }
+
+  &:not(:last-child) {
+     @media screen and (max-width: 767px) {
+      margin-bottom: 130px;
+  }
+}
+}
+
+@include colorize($colors, ".products-list__item");
+
+@include imaginize-mobile($images-mobile, ".products-list__item");
+
+@media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+
+@include imaginize-mobile2x($images-mobile2x, ".products-list__item");
+
+  }
+
+@media screen and (min-width:768px) {
+
+  @include imaginize-tablet($images-tablet, ".products-list__item");
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
+    @include imaginize-tablet2x($images-tablet2x, ".products-list__item");
+
+  }
+}
+
+@media screen and (min-width:1280px) {
+
+  @include imaginize-desktop($images-desktop, ".products-list__item");
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+
+    @include imaginize-desktop2x($images-desktop2x, ".products-list__item");
+
+  }
+}
+
+.products-list__item::before {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  content: '';
+  display: block;
+  width: 249px;
+  height: 252px;
+
+  background-image: url(../images/products/icecream1-mobile@1x.png);
+  background-size: contain;
+
+@media screen and (min-width: 768px) {
+  width: 220px;
+  height: 224px;
+}
+
+@media screen and (min-width: 1280px) {
+  top: -5%;
+  width: 335px;
+  height: 335px;
+}
+}
+
+.meta-container {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.meta-container.flip {
+  transform: rotateY(180deg);
+}
+
+.front-container,
+.back-container {
+  backface-visibility: hidden;
+}
+
+.front-container {
+  height: 100%;
+  transform: rotateX(0deg);
+}
+
+.back-container {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0px;
+
+  transform: rotateY(180deg);
+}
+
+.products-list__title {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $Light-text;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 6px;
+
+    background-image: url(../images/products/dots.png);
+    background-size: 26px 6px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.products-list__description {
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+
+  color: $Light-text;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
+}
+
+.products-list__button {
+  width: 40px;
+  height: 40px;
+ 
+  background-image: url(../images/products/arrow-right.png);
+  background-size: contain;
+
+  border: transparent;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+   padding: 0;
+}

@@ -1,0 +1,60 @@
+$Light-text: #ffffff;
+$Main-text: #000000;
+$Secondary-text: #907e82;
+$Main-background: #fff5f6;
+$medium-secondary-text: #e1e1e1;
+$Dark-backgroung: #ffb8ca;
+$Background-accent1: #f0d1a5;
+$Background-accent2: #c2e297;
+$Light-secondary-text: #fafafa;
+$Mobile-menu-accent: #e17992;
+$accent: #d41443;
+$Light-accent: #ffa5ba;
+$Button-light-hover: #ecebeb;
+$Button-dark-hover: #c7133e;
+$Dark-accent-icon: #d31342;
+$Light-accent-icon: #fea5bb;
+$Secondary-icon: #d9d9d9;
+
+
+$main-font: 'Dm Sans', sans-serif;
+$secondary-font: 'Titan One', sans-serif;
+
+// Перменные для миксинов цветов секции "Products"
+$colors: 
+"#FFB8CA",
+"#F0D1A5",
+"#C2E297";
+
+// Перменные для миксинов изображений секции "Products" под мобильные 
+$images-mobile: 
+"url(../images/products/icecream1-mobile@1x.png)",
+"url(../images/products/icecream2-mobile@1x.png)",
+"url(../images/products/icecream3-mobile@1x.png)";
+
+$images-mobile2x: 
+"url(../images/products/icecream1-mobile@2x.png)",
+"url(../images/products/icecream2-mobile@2x.png)",
+"url(../images/products/icecream3-mobile@2x.png)";
+
+// Перменные для миксинов изображений секции "Products" под планшеты 
+$images-tablet: 
+"url(../images/products/icecream1-tablet@1x.png)",
+"url(../images/products/icecream2-tablet@1x.png)",
+"url(../images/products/icecream3-tablet@1x.png)";
+
+$images-tablet2x: 
+"url(../images/products/icecream1-tablet@2x.png)",
+"url(../images/products/icecream2-tablet@2x.png)",
+"url(../images/products/icecream3-tablet@2x.png)";
+
+// Перменные для миксинов изображений секции "Products" под ПК 
+$images-desktop: 
+"url(../images/products/icecream1-desktop@1x.png)",
+"url(../images/products/icecream2-desktop@1x.png)",
+"url(../images/products/icecream3-desktop@1x.png)";
+
+$images-desktop2x: 
+"url(../images/products/icecream1-desktop@2x.png)",
+"url(../images/products/icecream2-desktop@2x.png)",
+"url(../images/products/icecream3-desktop@2x.png)";

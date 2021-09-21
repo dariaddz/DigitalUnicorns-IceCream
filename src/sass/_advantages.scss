@@ -1,0 +1,116 @@
+/* advantage-list */
+.advantage {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+}
+
+.advantage-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.advantage-list__item {
+  &::before {
+    content: '';
+
+    display: block;
+
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &:nth-child(1)::before {
+    content: ('');
+    width: 33px;
+    height: 50px;
+    background-image: url(../images/advantages/advantage1@1x.png);
+  }
+
+  @media (min-rezolution: 2dppx), (min-resolution: 192dpi) {
+    &:nth-child(1)::before {
+      content: ('');
+      width: 33px;
+      height: 50px;
+      background-image: url(../images/advantages/advantage1@2x.png);
+    }
+  }
+
+  &:nth-child(2)::before {
+    content: ('');
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/advantage2@1x.png);
+  }
+
+  @media (min-rezolution: 2dppx), (min-resolution: 192dpi) {
+    &:nth-child(2)::before {
+      content: ('');
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/advantages/advantage2@2x.png);
+    }
+  }
+
+  &:nth-child(3)::before {
+    content: ('');
+    width: 44px;
+    height: 50px;
+    background-image: url(../images/advantages/advantage3@1x.png);
+  }
+
+  @media (min-rezolution: 2dppx), (min-resolution: 192dpi) {
+    &:nth-child(3)::before {
+      content: ('');
+      width: 44px;
+      height: 50px;
+      background-image: url(../images/advantages/advantage3@2x.png);
+    }
+  }
+
+  // width: 270px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 85px) / 3);
+    margin: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 2 * 100px) / 3);
+    margin: 0px;
+  }
+}
+
+.advantage-list__title {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  color: $accent;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.advantage-list__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0;
+}

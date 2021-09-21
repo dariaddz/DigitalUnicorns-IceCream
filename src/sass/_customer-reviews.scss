@@ -1,0 +1,185 @@
+
+.customer-reviews {
+    background-color: $Light-text ;
+    padding-bottom: 85px;
+    
+    
+    
+
+    @media screen and(min-width: 768px) {
+       //min-height: 550px;  
+       padding-bottom: 120px;
+    }
+    @media screen and(min-width: 1280px) {
+       // height: 500px;
+       padding-bottom: 130px;  
+    }
+    
+
+   // background-image: linear-gradient(to bottom, #fff5f6, #ffffff);
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.customer-reviews__img {
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85px; 
+
+    // @media screen and(min-width: 480px) {
+    //    max-width: 85px; 
+     
+    // }
+
+    @media screen and(min-width: 768px) {
+       margin-bottom: 20px; 
+    }
+    @media screen and(min-width: 1280px) {
+        margin-bottom: 15px;
+    }
+}
+
+.background {
+    background: $Light-secondary-text;
+    position: relative;
+    padding: 45px 50px 25px 50px;
+
+    @media screen and(min-width: 768px) {
+        margin: 0 55px;
+    }
+
+    @media screen and(min-width: 1280px) {
+        margin: 0 155px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 12%;
+        top: 17%;
+        width: 54px;
+        height: 40px;
+        z-index: 1;
+        background-image: url("../images/customer-reviews/quotes.svg");
+        background-repeat: no-repeat;
+
+        @media screen and(min-width: 768px) {
+            left: 7%;
+            top: 19%;
+        }
+        @media screen and(min-width: 1280px) {
+            left: 4%;
+            top: 23%;
+        }
+        
+    }
+   
+}
+
+.customer-reviews__text {
+    position: relative;
+    z-index: 10;
+    padding: 0 15px;
+    text-align: center;   
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.58;
+    color: $Main-text;
+     background-image: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 28px, #E1E1E1 19px, transparent 30px);
+
+    @media screen and(min-width: 768px) {
+        font-size: 14px;
+        line-height: 2.14;
+        letter-spacing: 0.04em;
+        background-image: -webkit-repeating-linear-gradient(top, transparent 0px, transparent 27px, #E1E1E1 19px, transparent 29px);
+    }
+    
+    @media screen and(min-width: 1280px) {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.87;
+        
+    }
+
+    &::after {
+        position: absolute;
+        left: 41%;
+        bottom: -58px;
+        content: "";
+        background-image: url("../images/customer-reviews/dot.svg");
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 4px;
+
+        @media screen and(min-width: 400px) {
+            left: 45%;
+        }
+
+        @media screen and(min-width: 768px) {
+            left: 47%;
+        }
+
+        @media screen and(min-width: 1280px) {
+            left: 48%;       
+        }
+    }
+}
+
+.customer-reviews__city {
+    color: $Main-text;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:1.85;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+    @media screen and(min-width: 768px) {
+           font-size: 16px; 
+        }
+    @media screen and(min-width: 1280px) {
+            font-size: 20px;       
+        }
+
+}
+
+.slick-dots li {
+    margin-right: 10px;
+    margin-left: 0;
+    &:last-child {
+       margin: 0;
+}
+
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: $Dark-accent-icon;
+    background-image: url(../images/customer-reviews/house-button.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 13px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: $Main-text;
+    -webkit-font-smoothing: antialiased;
+}

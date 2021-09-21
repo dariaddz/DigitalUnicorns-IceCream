@@ -1,0 +1,76 @@
+@mixin colorize($colors, $baseSelector) {
+  @each $color in $colors {
+    $idx: index($colors, $color);
+
+    #{$baseSelector}:nth-child(#{$idx}) {
+      background-color: #{$color};
+    }
+  }
+}
+
+// Миксины изображений секции "Products" под мобильные
+@mixin imaginize-mobile($images-mobile, $baseSelector) {
+  @each $image in $images-mobile {
+    $idx: index($images-mobile, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
+
+@mixin imaginize-mobile2x($images-mobile2x, $baseSelector) {
+  @each $image in $images-mobile2x {
+    $idx: index($images-mobile2x, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
+
+// Миксины изображений секции "Products" под планшеты
+@mixin imaginize-tablet($images-tablet, $baseSelector) {
+  @each $image in $images-tablet {
+    $idx: index($images-tablet, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
+
+@mixin imaginize-tablet2x($images-tablet2x, $baseSelector) {
+  @each $image in $images-tablet2x {
+    $idx: index($images-tablet2x, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
+
+// Миксины изображений секции "Products" под ПК
+@mixin imaginize-desktop($images-desktop, $baseSelector) {
+  @each $image in $images-desktop {
+    $idx: index($images-desktop, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
+
+@mixin imaginize-desktop2x($images-desktop2x, $baseSelector) {
+  @each $image in $images-desktop2x {
+    $idx: index($images-desktop2x, $image);
+
+    #{$baseSelector}:nth-child(#{$idx})::before {
+      background-image: #{$image};
+    }
+  }
+}
+
+@mixin transit($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

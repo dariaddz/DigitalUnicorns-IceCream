@@ -1,0 +1,162 @@
+<section id="contacts" class="contacts-section">
+  <h2 class="visually-hidden">Contacts</h2>
+  <div class="container container--mob">
+    <ul class="contacts-list">
+      <li class="contacts-list__item">
+        <div class="contacts-main contacts-main--primary">
+          <p class="contacts-main__subtitle">CAFE</p>
+        </div>
+        <p class="contacts__text contacts__text--subtitle">Chicago</p>
+        <p class="contacts-description__text">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <div class="contacts-middle">
+          <div class="contacts">
+            <p class="contacts__text contacts__text--primary">Monday - Friday</p>
+            <p class="contacts__text contacts__text--secondary">06:00 AM - 10:00 PM</p>
+          </div>
+          <p class="contacts__text contacts__text--primary">Saturday - Sunday</p>
+          <p class="contacts__text contacts__text--secondary">08:00 AM - 16:00 PM</p>
+        </div>
+        <address class="contacts__address">
+          <ul>
+            <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+            <li>
+              <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </address>
+      </li>
+
+      <li class="contacts-list__item">
+        <div class="contacts-main contacts-main--secondary">
+          <p class="contacts-main__subtitle">FOODTRUCK</p>
+        </div>
+        <p class="contacts__text contacts__text--subtitle">Los Angeles</p>
+        <p class="contacts-description__text">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <div class="contacts-middle">
+          <div class="contacts">
+            <p class="contacts__text contacts__text--primary">Monday - Friday</p>
+            <p class="contacts__text contacts__text--secondary">06:00 AM - 10:00 PM</p>
+          </div>
+          <p class="contacts__text contacts__text--primary">Saturday - Sunday</p>
+          <p class="contacts__text contacts__text--secondary">08:00 AM - 16:00 PM</p>
+        </div>
+        <address class="contacts__address">
+          <ul>
+            <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+            <li>
+              <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </address>
+      </li>
+
+      <li class="contacts-list__item">
+        <div class="contacts-main contacts-main--primary">
+          <p class="contacts-main__subtitle">CAFE</p>
+        </div>
+        <p class="contacts__text contacts__text--subtitle">New York</p>
+        <p class="contacts-description__text">
+          Fusce ut velit laoreet, tempus arcu molestie vulputate
+        </p>
+        <div class="contacts-middle">
+          <div class="contacts">
+            <p class="contacts__text contacts__text--primary">Monday - Friday</p>
+            <p class="contacts__text contacts__text--secondary">06:00 AM - 10:00 PM</p>
+          </div>
+          <p class="contacts__text contacts__text--primary">Saturday - Sunday</p>
+          <p class="contacts__text contacts__text--secondary">08:00 AM - 16:00 PM</p>
+        </div>
+        <address class="contacts__address">
+          <ul>
+            <li><a class="contacts__link" href="tel:+61(0)383766284">+61(0) 383 766 284</a></li>
+            <li>
+              <a class="contacts__link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+            </li>
+          </ul>
+        </address>
+      </li>
+    </ul>
+
+    <ul class="contacts-btn contacts-btn--mobc">
+      <li class="contacts-btn__item">
+        <button
+          data-map-open
+          class="dark-btn dark-btn--mobc dark-btn--tabc dark-btn--descc"
+          type="button"
+        >
+          Our Locations
+          <svg class="contacts__icon" width="10" height="10">
+            <use href="./images/contacts/contacts-vector-white.svg#contacts-vector-white"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="contacts-btn__item">
+        <button
+          data-franchise-open
+          class="light-btn light-btn--mobc light-btn--tabc light-btn--descc"
+          type="button"
+        >
+          Franchise
+          <svg class="contacts__icon" width="10" height="10">
+            <use href="./images/contacts/contacts-vector.svg#contacts-vector"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+
+    <!-- модалка  -->
+
+    <div data-franchise class="backdrop is-hidden">
+      <div class="contacts-modal modal">
+        <button data-franchise-close class="close-shop" type="button">
+          <a href="">
+            <svg width="10" height="10" aria-label="mobile menu switcher">
+              <use class="close-shop__icon" href="./images/hero/buy-now_modal.svg#close"></use>
+            </svg>
+          </a>
+        </button>
+        <form class="contacts-form" autocomplete="off">
+          <h4 class="modal__header">Join Us</h4>
+          <ul>
+            <li class="contacts-form__item">
+              <label class="contacts-form__label"
+                >Name
+                <input type="text" class="contacts-form__input" name="name" placeholder=" " />
+              </label>
+            </li>
+            <li class="contacts-form__item">
+              <label class="contacts-form__label"
+                >Phone number
+                <input type="tel" class="contacts-form__input" name="phone" placeholder=" " />
+              </label>
+            </li>
+            <li class="contacts-form__item">
+              <label class="contacts-form__label"
+                >Email
+                <input type="email" class="contacts-form__input" name="mail" placeholder=" " />
+              </label>
+            </li>
+            <li class="contacts-form__item">
+              <label class="contacts-form__label"
+                >Message
+                <textarea
+                  class="contacts-form__input contacts-form__input--comment-input"
+                  name="comment"
+                  cols="30"
+                  rows="5"
+                  placeholder="Write text"
+                >
+                </textarea>
+              </label>
+            </li>
+          </ul>
+          <button class="light-btn light-btn--send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

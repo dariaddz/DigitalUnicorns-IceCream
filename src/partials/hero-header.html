@@ -1,0 +1,209 @@
+<section class="hero" id="hero-section">
+  <div class="container hero__container">
+    <header class="header">
+      <a href="" class="logo">
+        <img
+          src="./images/hero/logo@1x.png"
+          srcset="./images/hero/logo@1x.png 1x, ./images/hero/logo@2x.png 2x"
+          alt="IceCream"
+          class="logo-image"
+      /></a>
+      <nav>
+        <ul class="header__site-nav-list">
+          <li class="header__site-nav-item">
+            <a href="#hero-section" class="header__site-nav-link">Home</a>
+          </li>
+          <li class="header__site-nav-item">
+            <a href="#advantage" class="header__site-nav-link">About us</a>
+          </li>
+          <li class="header__site-nav-item">
+            <a href="#about" class="header__site-nav-link">How it’s made?</a>
+          </li>
+          <li class="header__site-nav-item">
+            <a href="#products" class="header__site-nav-link">Our products</a>
+          </li>
+          <li class="header__site-nav-item">
+            <a href="#contacts" class="header__site-nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__modal-btn light-btn" type="button" data-shop-open data-modal_buy-open>
+        Buy now
+        <svg class="about__icon" width="10" height="10">
+          <use href="./images/about/symbol-defs.svg#icon-Vector-about"></use>
+        </svg>
+      </button>
+
+      <button
+        class="menu-btn menu-btn--open js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="menu-btn-icon"
+          width="20"
+          height="12"
+          fill="currentColor"
+          aria-label="mobile menu switcher"
+        >
+          <use href="./images/hero/symbol-defs__hero-header.svg#menu-icon-open"></use>
+        </svg>
+      </button>
+
+      <!-- мобільне меню -->
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="menu-btn menu-btn--close js-close-menu" type="button">
+          <svg width="14" height="14" aria-label="mobile menu switcher">
+            <use
+              class="menu-btn-icon"
+              href="./images/hero/symbol-defs__hero-header.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+
+        <button data-shop-mobile-open class="mobile-menu__modal-btn light-btn" type="button">
+          Buy now
+          <svg class="about__icon" width="10" height="10">
+            <use href="./images/about/symbol-defs.svg#icon-Vector-about"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mobile-menu__site-nav-list">
+            <li class="mobile-menu__site-nav-item">
+              <a href="#hero-section" class="mobile-menu__site-nav-link js-menu-item">Home</a>
+            </li>
+            <li class="mobile-menu__site-nav-item">
+              <a href="#advantage" class="mobile-menu__site-nav-link js-menu-item">About us</a>
+            </li>
+            <li class="mobile-menu__site-nav-item">
+              <a href="#about" class="mobile-menu__site-nav-link js-menu-item">How it’s made?</a>
+            </li>
+            <li class="mobile-menu__site-nav-item">
+              <a href="#products" class="mobile-menu__site-nav-link js-menu-item">Our products</a>
+            </li>
+            <li class="mobile-menu__site-nav-item">
+              <a href="#contacts" class="mobile-menu__site-nav-link js-menu-item">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero__content-container">
+      <div class="hero__title-box">
+        <h1 class="hero__title">
+          ice cream <br />
+          made with <br />
+          <span class="hero__title-accent">passion</span>
+        </h1>
+        <ul class="hero__title-btn-list">
+          <li class="hero__title-btn-item">
+            <a href="#products" class="hero__btn dark-btn">Products</a>
+          </li>
+          <li class="hero__title-btn-item">
+            <a href="#about" class="hero__btn light-btn">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="hero__infrostructure-container">
+        <li class="hero__infrostructure-box">
+          <a href="#contacts" class="hero__infrostructure-link">
+            <span class="hero__infrostructure-number">16</span>
+            <p class="hero__infrostructure-text">cafes</p>
+          </a>
+        </li>
+        <li class="hero__infrostructure-box">
+          <a href="#contacts" class="hero__infrostructure-link">
+            <span class="hero__infrostructure-number">23</span>
+            <p class="hero__infrostructure-text">food trucks</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero__description-box">
+      <p class="hero__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <a href="#about" class="read-more-btn">
+        <svg class="arrow-right_btn-icon" fill="currentColor">
+          <use href="./images/hero/symbol-defs__hero.svg#arrow-right"></use>
+        </svg>
+      </a>
+    </div>
+
+    <!-- фонові зображення -->
+    <button class="icecream-btn" type="button" data-modal_buy-open>
+      <picture>
+        <source
+          srcset="
+            ./images/hero/icecream_desktop@1x.png 1x,
+            ./images/hero/icecream_desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/hero/icecream_tablet@1x.png 1x, ./images/hero/icecream_tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/hero/icecream_mobile@1x.png 1x, ./images/hero/icecream_mobile@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img class="icecream-img" src="./images/hero/icecream_desktop@1x.png" alt="icecream" />
+      </picture>
+    </button>
+
+    <div class="circle"></div>
+    <ul>
+      <li>
+        <a href="#reviews" class="hero__link--reviews">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/so-tasty_desktop@1x.png 1x,
+                ./images/hero/so-tasty_desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/so-tasty_tablet@1x.png 1x,
+                ./images/hero/so-tasty_tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              class="so-tasty-img"
+              src="./images/hero/so-tasty_tablet@1x.png"
+              alt="girl tastes ice cream"
+            />
+          </picture>
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="hero__link--about">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/bio-eco_desktop@1x.png 1x,
+                ./images/hero/bio-eco_desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/hero/bio-eco_tablet@1x.png 1x,
+                ./images/hero/bio-eco_tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img class="bio-eco-img" src="./images/hero/bio-eco_tablet@1x.png" alt="jug of milk" />
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
